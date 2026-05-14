@@ -1,0 +1,83 @@
+<svg viewBox="0 0 900 560" xmlns="http://www.w3.org/2000/svg" role="img" style="width:100%;height:auto">
+  <title>Aliotos watch navigation hierarchy</title>
+  <desc>A clean navigation diagram that shows the watch-based communication hierarchy for Aliotos.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#f5fbf8" />
+      <stop offset="100%" stop-color="#ffffff" />
+    </linearGradient>
+    <marker id="arrow" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto">
+      <path d="M0,0 L8,4 L0,8 Z" fill="#3FB8D1" />
+    </marker>
+  </defs>
+  <rect width="900" height="560" rx="24" fill="url(#bg)" />
+  <rect x="36" y="28" width="828" height="56" rx="16" fill="#3FB8D1" opacity="0.12" />
+  <text x="54" y="62" font-family="Inter, sans-serif" font-size="20" font-weight="700" fill="#0f172a">Watch navigation hierarchy</text>
+  <text x="54" y="88" font-family="Inter, sans-serif" font-size="13" fill="#475569">Main menu structure for fast child communication on the watch.</text>
+
+  <g>
+    <rect x="84" y="132" width="160" height="70" rx="18" fill="#ffffff" stroke="#cbd5e1" stroke-width="1" />
+    <text x="164" y="168" text-anchor="middle" font-family="Inter, sans-serif" font-size="16" font-weight="700" fill="#0f172a">Home</text>
+    <text x="164" y="188" text-anchor="middle" font-family="Inter, sans-serif" font-size="12" fill="#64748b">Quick access categories</text>
+  </g>
+
+  <g>
+    <rect x="320" y="132" width="160" height="70" rx="18" fill="#ffffff" stroke="#cbd5e1" stroke-width="1" />
+    <text x="400" y="158" text-anchor="middle" font-family="Inter, sans-serif" font-size="16" font-weight="700" fill="#0f172a">Category grid</text>
+    <text x="400" y="178" text-anchor="middle" font-family="Inter, sans-serif" font-size="12" fill="#64748b">Clothes, drinks, food, feelings</text>
+  </g>
+
+  <g>
+    <rect x="556" y="132" width="160" height="70" rx="18" fill="#ffffff" stroke="#cbd5e1" stroke-width="1" />
+    <text x="636" y="158" text-anchor="middle" font-family="Inter, sans-serif" font-size="16" font-weight="700" fill="#0f172a">Response row</text>
+    <text x="636" y="178" text-anchor="middle" font-family="Inter, sans-serif" font-size="12" fill="#64748b">Yes, No, Thank you, More</text>
+  </g>
+
+  <path d="M244 168 L320 168" fill="none" stroke="#3FB8D1" stroke-width="3" marker-end="url(#arrow)" />
+  <path d="M480 168 L556 168" fill="none" stroke="#3FB8D1" stroke-width="3" marker-end="url(#arrow)" />
+
+  <g>
+    <rect x="220" y="252" width="120" height="52" rx="14" fill="#ffffff" stroke="#cbd5e1" stroke-width="1" />
+    <text x="280" y="282" text-anchor="middle" font-family="Inter, sans-serif" font-size="14" font-weight="600" fill="#0f172a">Quick actions</text>
+  </g>
+
+  <g>
+    <rect x="402" y="252" width="120" height="52" rx="14" fill="#ffffff" stroke="#cbd5e1" stroke-width="1" />
+    <text x="462" y="282" text-anchor="middle" font-family="Inter, sans-serif" font-size="14" font-weight="600" fill="#0f172a">Parent toggle</text>
+  </g>
+
+  <path d="M360 168 L360 252" fill="none" stroke="#3FB8D1" stroke-width="3" marker-end="url(#arrow)" />
+  <path d="M320 276 L402 276" fill="none" stroke="#3FB8D1" stroke-width="3" marker-end="url(#arrow)" />
+
+  <g>
+    <rect x="608" y="252" width="120" height="52" rx="14" fill="#ffffff" stroke="#cbd5e1" stroke-width="1" />
+    <text x="668" y="282" text-anchor="middle" font-family="Inter, sans-serif" font-size="14" font-weight="600" fill="#0f172a">Message log</text>
+  </g>
+
+  <path d="M636 202 L636 252" fill="none" stroke="#3FB8D1" stroke-width="3" marker-end="url(#arrow)" />
+
+  <g>
+    <rect x="84" y="340" width="220" height="52" rx="14" fill="#ffffff" stroke="#cbd5e1" stroke-width="1" />
+    <text x="194" y="372" font-family="Inter, sans-serif" font-size="13" fill="#0f172a">Watch-first view</text>
+  </g>
+
+  <g>
+    <rect x="340" y="340" width="220" height="52" rx="14" fill="#ffffff" stroke="#cbd5e1" stroke-width="1" />
+    <text x="450" y="372" font-family="Inter, sans-serif" font-size="13" fill="#0f172a">Child selects category</text>
+  </g>
+
+  <g>
+    <rect x="596" y="340" width="220" height="52" rx="14" fill="#ffffff" stroke="#cbd5e1" stroke-width="1" />
+    <text x="706" y="372" font-family="Inter, sans-serif" font-size="13" fill="#0f172a">Taps quick response</text>
+  </g>
+
+  <path d="M204 340 L204 304" fill="none" stroke="#94a3b8" stroke-width="2" />
+  <path d="M204 304 L240 304" fill="none" stroke="#94a3b8" stroke-width="2" />
+  <path d="M240 304 L240 340" fill="none" stroke="#94a3b8" stroke-width="2" />
+
+  <path d="M456 340 L456 252" fill="none" stroke="#94a3b8" stroke-width="2" />
+  <path d="M456 252 L496 252" fill="none" stroke="#94a3b8" stroke-width="2" />
+
+  <path d="M712 340 L712 304" fill="none" stroke="#94a3b8" stroke-width="2" />
+  <path d="M712 304 L752 304" fill="none" stroke="#94a3b8" stroke-width="2" />
+</svg>

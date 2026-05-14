@@ -1,0 +1,22 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(curl -s -o /dev/null -w \"HTTP %{http_code}\\\\n\" http://localhost:5173/)",
+      "Bash(curl -s http:c//localhost:5173/)",
+      "mcp__ide__getDiagnostics",
+      "WebFetch(domain:haniaguiagoussou.wixsite.com)",
+      "Bash(node --input-type=module)",
+      "Bash(python3 *)",
+      "WebFetch(domain:makezine.com)",
+      "Bash(npm run *)",
+      "WebFetch(domain:learner-segmentation-dashboard-vtl5uz7k6am5iagovgwfpr.streamlit.app)",
+      "WebFetch(domain:onedublin.org)",
+      "WebFetch(domain:www.collegeadvisor.com)",
+      "WebFetch(domain:blog.google)",
+      "Bash(gh auth *)",
+      "Bash(git *)",
+      "Bash(brew install *)",
+      "Bash(gh --version)"
+    ]
+  }
+}
