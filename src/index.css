@@ -20,6 +20,24 @@
   100% { transform: translateX(-33.333%); }
 }
 
+.hero-stats,
+.card-meta,
+.card-tools {
+  display: none;
+}
+
+@media (min-width: 768px) {
+  .hero-stats {
+    display: flex;
+  }
+  .card-meta {
+    display: grid;
+  }
+  .card-tools {
+    display: flex;
+  }
+}
+
 @layer utilities {
   .serif-italic {
     font-family: 'Instrument Serif', serif;

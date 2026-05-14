@@ -90,7 +90,7 @@ export default function Hero() {
             experiences that put people first.
           </p>
 
-          <div className="hidden md:flex md:col-span-4 md:col-start-9 flex-col gap-2 text-sm">
+          <div className="hero-stats md:col-span-4 md:col-start-9 flex-col gap-2 text-sm">
             <div className="flex justify-between border-t border-ink-900/15 pt-3">
               <span className="text-ink-500">Based in</span>
               <span className="text-ink-900">{profile.location}</span>

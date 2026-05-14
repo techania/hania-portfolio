@@ -95,7 +95,7 @@ export default function ProjectCard({ project, index }) {
             {project.blurb}
           </p>
 
-          <dl className="hidden md:grid mt-6 grid-cols-2 gap-x-6 gap-y-4 max-w-md text-sm border-t border-ink-900/10 pt-5">
+          <dl className="card-meta mt-6 grid-cols-2 gap-x-6 gap-y-4 max-w-md text-sm border-t border-ink-900/10 pt-5">
             {project.role && (
               <div className="col-span-2 sm:col-span-1">
                 <dt className="font-mono text-[10px] uppercase tracking-[0.2em] text-ink-500 mb-1">
@@ -115,7 +115,7 @@ export default function ProjectCard({ project, index }) {
           </dl>
 
           {project.tools && project.tools.length > 0 && (
-            <div className="hidden md:flex mt-4 flex-wrap gap-2 max-w-md">
+            <div className="card-tools mt-4 flex-wrap gap-2 max-w-md">
               {project.tools.map((t) => (
                 <span
                   key={t}
