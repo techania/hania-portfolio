@@ -31,7 +31,7 @@ export const projects = [
     role: 'Designer & Developer',
     tools: ['Figma', 'Swift', 'watchOS', 'iOS'],
     blurb:
-      'A dual-mode AAC product that pairs a watch-first expressive interface with a parent companion app. Users can switch the same icon-based communication system onto the phone for handoff, support, and caregiver-driven check-ins.',
+      'A communication app for non-verbal users — children tap icons on their Apple Watch to express themselves, while a caregiver companion app on iPhone mirrors the same interface for real-time support and check-ins.',
     tags: ['Accessibility', 'Wearable', 'Healthcare', 'Companion'],
     color: '#3FB8D1',
     thumbnail: '/projects/aliotos/aliotos.png',

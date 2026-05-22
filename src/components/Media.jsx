@@ -159,9 +159,6 @@ export default function Media() {
                 <span className="font-mono text-[11px] uppercase tracking-[0.2em] text-ink-400">
                   {item.source}
                 </span>
-                <span className="font-mono text-[11px] text-ink-400">
-                  {item.year}
-                </span>
               </div>
 
               <div className="flex-1 min-w-0">
