@@ -31,7 +31,7 @@ export const projects = [
     role: 'Designer & Developer',
     tools: ['Figma', 'Swift', 'watchOS', 'iOS'],
     blurb:
-      'A communication app for non-verbal users — children tap icons on their Apple Watch to express themselves, while a caregiver companion app on iPhone mirrors the same interface for real-time support and check-ins.',
+      'A communication app for non-verbal users where children tap icons on their Apple Watch to express themselves, while a caregiver companion app on iPhone mirrors the same interface for real-time support and check-ins.',
     tags: ['Accessibility', 'Wearable', 'Healthcare', 'Companion'],
     color: '#3FB8D1',
     thumbnail: '/projects/aliotos/aliotos.png',
