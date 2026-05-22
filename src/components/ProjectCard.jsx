@@ -45,6 +45,13 @@ export default function ProjectCard({ project, index }) {
                 <div className="absolute inset-0 bg-gradient-to-t from-ink-900/30 via-transparent to-transparent pointer-events-none rounded-xl" />
               )}
               <motion.div
+                animate={{ y: hovered ? 0 : -4, opacity: hovered ? 1 : 0 }}
+                transition={{ duration: 0.4, ease }}
+                className={`absolute top-5 left-5 text-xs font-mono uppercase tracking-wider ${project.framed ? 'text-cream-100/80' : 'text-cream-100'}`}
+              >
+                {project.category}
+              </motion.div>
+              <motion.div
                 animate={{ y: hovered ? 0 : 8, opacity: hovered ? 1 : 0 }}
                 transition={{ duration: 0.4, ease }}
                 className="absolute bottom-5 right-5 h-11 w-11 rounded-full bg-cream-100 text-ink-900 flex items-center justify-center"
@@ -70,6 +77,13 @@ export default function ProjectCard({ project, index }) {
                 </span>
               </motion.div>
               <div className="absolute inset-0 bg-gradient-to-t from-ink-900/40 via-transparent to-transparent pointer-events-none" />
+              <motion.div
+                animate={{ y: hovered ? 0 : -4, opacity: hovered ? 1 : 0 }}
+                transition={{ duration: 0.4, ease }}
+                className="absolute top-5 left-5 text-cream-100 text-xs font-mono uppercase tracking-wider"
+              >
+                {project.category}
+              </motion.div>
               <motion.div
                 animate={{ y: hovered ? 0 : 8, opacity: hovered ? 1 : 0 }}
                 transition={{ duration: 0.4, ease }}
