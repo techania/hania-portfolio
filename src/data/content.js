@@ -16,7 +16,7 @@ export const about = {
   intro:
     "A strategist and designer, working where product, design, and data overlap.",
   body: [
-    "Studied computer science at Columbia and economics at Sciences Po Paris, two schools, two ways of thinking about systems and the people inside them. Started in EdTech, working as a data analyst and TPM building tools and infrastructure for learning programs. Then moved into deployment strategy, embedding with enterprise customers to turn real problems into software that actually gets used.",
+    "Studied computer science at Columbia and economics at Sciences Po Paris, two schools, two ways of thinking about systems and the people inside them. Started in EdTech, working as a data analyst and TPM building tools and infrastructure for learning programs. Then moved into deployment strategy, working directly with enterprise customers to turn real problems into software that actually gets used.",
   ],
   highlights: [],
 }
