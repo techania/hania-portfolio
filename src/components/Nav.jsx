@@ -1,5 +1,5 @@
 import { useEffect, useState } from 'react'
-import { motion, useAnimation } from 'framer-motion'
+import { motion, useAnimation, AnimatePresence } from 'framer-motion'
 import { Link, useLocation } from 'react-router-dom'
 
 function SayHiButton({ href, isLink }) {
@@ -36,6 +36,7 @@ const links = [
 
 export default function Nav() {
   const [scrolled, setScrolled] = useState(false)
+  const [menuOpen, setMenuOpen] = useState(false)
   const { pathname } = useLocation()
   const onHome = pathname === '/'
 
@@ -92,8 +93,69 @@ export default function Nav() {
           </Link>
         </nav>
 
-        <SayHiButton href={onHome ? '#contact' : '/#contact'} isLink={!onHome} />
+        <div className="flex items-center gap-3">
+          <SayHiButton href={onHome ? '#contact' : '/#contact'} isLink={!onHome} />
+          <button
+            onClick={() => setMenuOpen((o) => !o)}
+            className="md:hidden flex flex-col justify-center items-center gap-1.5 w-8 h-8"
+            aria-label="Toggle menu"
+          >
+            <motion.span
+              animate={{ rotate: menuOpen ? 45 : 0, y: menuOpen ? 6 : 0 }}
+              className="block h-px w-5 bg-ink-900 origin-center"
+            />
+            <motion.span
+              animate={{ opacity: menuOpen ? 0 : 1 }}
+              className="block h-px w-5 bg-ink-900"
+            />
+            <motion.span
+              animate={{ rotate: menuOpen ? -45 : 0, y: menuOpen ? -6 : 0 }}
+              className="block h-px w-5 bg-ink-900 origin-center"
+            />
+          </button>
+        </div>
       </div>
+
+      <AnimatePresence>
+        {menuOpen && (
+          <motion.div
+            initial={{ opacity: 0, y: -8 }}
+            animate={{ opacity: 1, y: 0 }}
+            exit={{ opacity: 0, y: -8 }}
+            transition={{ duration: 0.2 }}
+            className="md:hidden bg-cream-100/95 backdrop-blur-md border-t border-ink-900/5 px-6 py-6 flex flex-col gap-5"
+          >
+            {links.map((l) =>
+              onHome ? (
+                <a
+                  key={l.hash}
+                  href={l.hash}
+                  onClick={() => setMenuOpen(false)}
+                  className="text-base text-ink-700 hover:text-ink-900 transition-colors"
+                >
+                  {l.label}
+                </a>
+              ) : (
+                <Link
+                  key={l.hash}
+                  to={`/${l.hash}`}
+                  onClick={() => setMenuOpen(false)}
+                  className="text-base text-ink-700 hover:text-ink-900 transition-colors"
+                >
+                  {l.label}
+                </Link>
+              )
+            )}
+            <Link
+              to="/media"
+              onClick={() => setMenuOpen(false)}
+              className="text-base text-ink-700 hover:text-ink-900 transition-colors"
+            >
+              Media
+            </Link>
+          </motion.div>
+        )}
+      </AnimatePresence>
     </motion.header>
   )
 }

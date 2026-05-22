@@ -44,9 +44,6 @@ export default function ProjectCard({ project, index }) {
               {!project.framed && (
                 <div className="absolute inset-0 bg-gradient-to-t from-ink-900/30 via-transparent to-transparent pointer-events-none rounded-xl" />
               )}
-              <div className={`absolute top-5 left-5 text-xs font-mono uppercase tracking-wider ${project.framed ? 'text-cream-100/80' : 'text-cream-100'}`}>
-                {project.category}
-              </div>
               <motion.div
                 animate={{ y: hovered ? 0 : 8, opacity: hovered ? 1 : 0 }}
                 transition={{ duration: 0.4, ease }}
@@ -73,9 +70,6 @@ export default function ProjectCard({ project, index }) {
                 </span>
               </motion.div>
               <div className="absolute inset-0 bg-gradient-to-t from-ink-900/40 via-transparent to-transparent pointer-events-none" />
-              <div className="absolute top-5 left-5 text-cream-100 text-xs font-mono uppercase tracking-wider">
-                {project.category}
-              </div>
               <motion.div
                 animate={{ y: hovered ? 0 : 8, opacity: hovered ? 1 : 0 }}
                 transition={{ duration: 0.4, ease }}
