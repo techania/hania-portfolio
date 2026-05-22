@@ -103,7 +103,7 @@ export default function Hero() {
             </div>
             <div className="flex justify-between border-t border-ink-900/15 pt-3">
               <span className="text-ink-500">Degree</span>
-              <span className="text-ink-900">Bachelors in Computer Science & Economics</span>
+              <span className="text-ink-900">BA, Computer Science & Economics</span>
             </div>
           </div>
         </motion.div>
